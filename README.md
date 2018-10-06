@@ -5,16 +5,16 @@
 > CLone/Download seçeneği ile projeyi alın.
 
 ```bash
-# clone our repo
+# repo yu klonluyoruz
 $ git clone https://github.com/ccautionn/Anguar-JS.git my-app
 
-# change directory to your app
+# directory değiştiriyoruz
 $ cd my-app
 
-# install the dependencies with npm
+# bağımlılıkları yüklüyoruz.
 $ npm install
 
-# start the server
+# server ı başlatıyoruz
 $ npm start
 ```
 
