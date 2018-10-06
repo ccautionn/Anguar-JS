@@ -1,25 +1,8 @@
-# angularjs-webpack
-
-[![Dependency Status](https://david-dm.org/preboot/angularjs-webpack/status.svg)](https://david-dm.org/preboot/angular-webpack#info=dependencies) [![devDependency Status](https://david-dm.org/preboot/angularjs-webpack/dev-status.svg)](https://david-dm.org/preboot/angularjs-webpack#info=devDependencies)
-
-A complete, yet simple, starter for AngularJS using Webpack.
-
-This workflow serves as a starting point for building AngularJS (1.x) applications using Webpack 2.x. Should be noted that apart from the pre-installed angular package, this workflow is pretty much generic.
-
-* Heavily commented webpack configuration with reasonable defaults.
-* ES6, and ES7 support with babel.
-* Source maps included in all builds.
-* Development server with live reload.
-* Production builds with cache busting.
-* Testing environment using karma to run tests and jasmine as the framework.
-* Code coverage when tests are run.
-* No gulp and no grunt, just npm scripts.
-
->Warning: Make sure you're using the latest version of Node.js and NPM
+# angularjs-fintek-demo
 
 ### Quick start
 
-> Clone/Download the repo then edit `app.js` inside [`/src/app/app.js`](/src/app/app.js)
+> CLone/Download seçeneği ile projeyi alın.
 
 ```bash
 # clone our repo
@@ -35,54 +18,45 @@ $ npm install
 $ npm start
 ```
 
-go to [http://localhost:8080](http://localhost:8080) in your browser.
+ [http://localhost:8080](http://localhost:8080) adresine browser üzerinden gidin.
 
-# Table of Contents
-
-* [Getting Started](#getting-started)
-    * [Dependencies](#dependencies)
-    * [Installing](#installing)
-    * [Running the app](#running-the-app)
-    * [Developing](#developing)
-    * [Testing](#testing)
-* [License](#license)
 
 # Getting Started
 
 ## Dependencies
 
-What you need to run this app:
-* `node` and `npm` (Use [NVM](https://github.com/creationix/nvm))
-* Ensure you're running Node (`v4.1.x`+) and NPM (`2.14.x`+)
+Bu uygulama için nelere ihtiyacınız var?:
+* `node` ve `npm` 
+*  Node versiyonunun (`v4.1.x`+) ve NPM versiyonun (`2.14.x`+) olduğundan emin olun.
 
 ## Installing
 
-* `fork` this repo
-* `clone` your fork
-* `npm install` to install all dependencies
+* `fork` 
+* `clone` 
+* `npm install`
 
 ## Running the app
 
-After you have installed all dependencies you can now run the app with:
+Tüm bağımlılıklar yüklendikten sonra:
 ```bash
 npm start
 ```
 
-It will start a local server using `webpack-dev-server` which will watch, build (in-memory), and reload for you. The port will be displayed to you as `http://localhost:8080`.
+Bu komut çalıştıktan sonra `webpack-dev-server` local servisini başlatacaktır. Bu servis tüm değişikliklerinizi inceleyecek, dahili hafızda build işlemini yapıp projenize yansıtacaktır. `http://localhost:8080` adresinden yayın yapacaktır.
 
 ## Developing
 
 ### Build files
 
-* single run: `npm run build`
-* build files and watch: `npm start`
+* sadece Build: `npm run build`
+* build eder ve izler: `npm start`
 
 ## Testing
 
 #### 1. Unit Tests
 
-* single run: `npm test`
-* live mode (TDD style): `npm run test-watch`
+* çalıştır: `npm test`
+* canlı mod (TDD stili): `npm run test-watch`
 
 # License
 
