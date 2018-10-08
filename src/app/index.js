@@ -7,10 +7,12 @@ import routing from './config';
 //modules
 import common from './modules/common';
 import Phone from './modules/Phone';
+import GitHub from './modules/github'
 
 angular.module('app',[
     uirouter,
     sanitize,
     common,
-    Phone])
+    Phone,
+    GitHub])
        .config(routing);

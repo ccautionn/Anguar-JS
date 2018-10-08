@@ -1,0 +1,10 @@
+<h2>{{Github.title}}</h2>
+<div>
+    <input type="text" ng-model="Github.searhParam">
+</div>
+<ul>
+    <li ng-repeat="user in Github.users | filter : Github.searhParam">
+       <!-- <img ng-src="{{user.avatar_url}}" title="{{user.login}}"> -->
+        {{user.login}}
+    </li>
+</ul>

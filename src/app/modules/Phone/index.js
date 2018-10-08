@@ -12,6 +12,5 @@ export default angular.module('main', [uirouter])
     // .controller('PhoneListController', PhoneListController) 
     .controller("PhoneDetailController",PhoneDetailController)
     .controller("PhoneController",PhoneController)
-    .controller("")
     .service("PhoneService",PhoneService)
     .name;
