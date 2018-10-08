@@ -3,11 +3,11 @@
           <div class="col-md-2">
             <!--Sidebar content-->
             <p>
-            Search: <input ng-model="PhoneList.query" />
+            Search: <input ng-model="Phone.query" />
             </p>
             <p>
                 Sort By:
-                <select ng-model="PhoneList.orderProp">
+                <select ng-model="Phone.orderProp">
                     <option value="name">Alphabetic</option>
                     <option value="age">Newest</option>
                 </select>
@@ -24,11 +24,11 @@
             </ul> -->
 
             <ul class="phones">
-                <li ng-repeat="phone in PhoneList.phones  | filter:PhoneList.query | orderBy:PhoneList.orderProp" class="thumbnail">
-                  <a ui-sref="detail({phoneId:phone.id})" class="thumb">
+                <li ng-repeat="phone in Phone.phones  | filter:Phone.query | orderBy:Phone.orderProp" class="thumbnail">
+                  <a ui-sref="phones.detail({phoneId:phone.id})" class="thumb">
                     <img ng-src="{{phone.imageUrl}}" alt="{{phone.name}}" />
                   </a>
-                  <a ui-sref="detail({phoneId:phone.id})">{{phone.name}}</a>
+                  <a ui-sref="phones.detail({phoneId:phone.id})">{{phone.name}}</a>
                   <p>{{phone.snippet}}</p>
                 </li>
               </ul>
